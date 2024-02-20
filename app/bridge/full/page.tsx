@@ -74,7 +74,7 @@ export default function Bridge() {
                             <WormholeBridge
                                 config={{
                                     "env": "mainnet", "cta": { "text": "Swap Assets on Forge", "link": "https://app.forge.trade" }, "walletConnectProjectId": "c5220802fbb362d942d7ef3813ed29c2",
-                                    "partnerLogo": "https://r2.forge.trade/forge-logo-small.png",
+                                    "partnerLogo": "https://wnr1c6qx6jcz9qde.public.blob.vercel-storage.com/data/forge-logo-small%20(1).png",
                                     "tokens": ["APT", "AVAX", "BNB", "BONK", "BUSD", "CELO", "DAI", "ETH", "ETHarbitrum", "ETHbase", "ETHoptimism", "EVMOS", "FTM", "GLMR", "KUJI", "MATIC", "OSMO", "PYTH", "SOL", "SUI", "USDCarbitrum", "USDCavax", "USDCbase", "USDCbnb", "USDCeth", "USDCoptimism", "USDCpolygon", "USDCsol", "USDT", "WAVAX", "WBNB", "WBTC", "WETH", "WETHarbitrum", "WETHbase", "WETHbsc", "WETHoptimism", "WETHpolygon", "WFTM", "WGLMR", "WMATIC", "WSOL", "tBTC", "tBTCarbitrum", "tBTCbase", "tBTCoptimism", "tBTCpolygon", "tBTCsol", "wstETH", "wstETHbase", "wstETHoptimism", "wstETHpolygon"],
                                     "customTheme": {
                                         "primary": {

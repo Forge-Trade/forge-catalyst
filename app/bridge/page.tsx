@@ -78,7 +78,7 @@ export default function Bridge() {
     
     const whConfig: WormholeConnectConfig = {
         "env": "mainnet", "cta": { "text": "Swap Assets on Forge", "link": "https://app.forge.trade" }, "walletConnectProjectId": "c5220802fbb362d942d7ef3813ed29c2",
-        "networks": ["solana", "ethereum", "evmos"], "partnerLogo": "https://r2.forge.trade/forge-logo-small.png",
+        "networks": ["solana", "ethereum", "evmos"], "partnerLogo": "https://wnr1c6qx6jcz9qde.public.blob.vercel-storage.com/data/forge-logo-small%20(1).png",
         "tokens": ["WBTC", "USDT", "USDC", "SOL", "WETH", "EVMOS"],
         "customTheme": {
             "primary": {

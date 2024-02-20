@@ -332,7 +332,7 @@ export default function Swap() {
                 <Iframe url="https://explorer.forge.trade/tokens"/>
                 </Suspense> */}
                   <Suspense fallback={<p>Loading...</p>}>
-                    <Iframe url="https://explorer.forge.trade/tokens" />
+                    <Iframe url="https://forge-viz.vercel.app/tokens" />
                     {/* <Iframe url="https://explorer.forge.trade/pools" /> */}
                   </Suspense>
                 </Card>

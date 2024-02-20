@@ -41,12 +41,12 @@ export function Changelog() {
   const [alerts, setAlerts] = useState<AlertType[]>([]);
 
   useEffect(() => {
-    fetch('https://r2.forge.trade/changelog.json') // replace with the actual path
+    fetch('https://wnr1c6qx6jcz9qde.public.blob.vercel-storage.com/r2/changelog-cTAxIXYNNmnBdGtFigG2gZ6pgDCiE7.json') // replace with the actual path
       .then(response => response.json())
       .then(data => setChangelogs(data));
   }, []);
   useEffect(() => {
-    fetch('https://r2.forge.trade/alerts.json') // replace with the actual path
+    fetch('https://wnr1c6qx6jcz9qde.public.blob.vercel-storage.com/r2/alerts-GSQLF4HNDgvzKqV79AEOURGzuba4DX.json') // replace with the actual path
       .then(response => response.json())
       .then(data => setAlerts(data));
   }, []);

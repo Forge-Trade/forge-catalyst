@@ -135,36 +135,7 @@ export function Sidebar() {
                         </ul>
                     </div>
 
-                    <div className="mt-6">
-                        <div className="mb-4 px-2">
-                            <span className="text-gray-400 uppercase text-sm font-mono">IronWorks Research Lab</span>
-                        </div>
-                        <ul className="space-y-1 text-sm">
-                            <li className="sidebarlink flex items-center gap-2 hover:cursor-not-allowed">
-                                <Link className={`link ${pathname === '/ironworks' ? 'active' : ''}`} href="/ironworks">
-
-                                    <ToolsIcon className="h-5 w-5 text-gray-400" />
-                                    <span className="text-gray-200">Tools</span>
-                                </Link>
-
-                            </li>
-                            <li className="sidebarlink flex items-center gap-2">
-                                <Sheet>
-                                    <SheetTrigger asChild>
-                                        <Link className={`link text-neutral-800 ${pathname === '/chat' ? 'active' : ''}`} href="">
-
-                                            <TrollBoxIcon className="h-5 w-5 text-neutral-800" />
-                                            <span className="text-neutral-800">Trollbox</span>
-                                        </Link>
-                                    </SheetTrigger>
-                                    <SheetContent className="p-0" side="left">
-                                        <Trollbox />
-                                    </SheetContent>
-                                </Sheet>
-
-                            </li>
-                        </ul>
-                    </div>
+                  
                     
                 </nav>
                 <div className="sidebarlink w-52 ml-2 xl:ml-1">

@@ -62,7 +62,7 @@ async function getData(): Promise<DataReturnType> {
   }
 }
 async function getCachedMarket() {
-  const res = await fetch('https://r2.forge.trade/cachedMarket.1705622400.json')
+  const res = await fetch('https://wnr1c6qx6jcz9qde.public.blob.vercel-storage.com/data/cachedMarket.1705622400.json')
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
@@ -70,7 +70,7 @@ async function getCachedMarket() {
 }
 
 export default async function KPICards() {
-  const cachedMarketResponse = await fetch('https://r2.forge.trade/cachedMarket.1705622400.json');
+  const cachedMarketResponse = await fetch('https://wnr1c6qx6jcz9qde.public.blob.vercel-storage.com/data/cachedMarket.1705622400.json');
   const cachedMarket = await cachedMarketResponse.json();
 
   const query = `{ arkiver2 { DayProducts(filter: { _operators: {date:{gte: 1705622400 }}, chainId: 9001} sort: DATE_DESC limit: 500) { date cumulativeVolumeUsd cumulativeFeesUsd positionCount tradeCount } } }`

@@ -27,7 +27,7 @@ export default function PoolsPage() {
                     loading="eager"
                     frameBorder="0" seamless allowTransparency
                     className="my-6 py-16 w-full h-screen overflow-y-scroll bg-background-secondary"
-                    src="https://pools.forge.trade/"></iframe>
+                    src="https://pools-alpha.vercel.app/"></iframe>
             </div>
         </div>
     )
