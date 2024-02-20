@@ -53,15 +53,16 @@ async function getAvatar(name: string) {
   }
 }
 async function getCachedTrades() {
-  const res = await fetch('https://wnr1c6qx6jcz9qde.public.blob.vercel-storage.com/data/cachedTrades.blank.json')
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
-  return res.json()
+  //const res = await fetch('https://wnr1c6qx6jcz9qde.public.blob.vercel-storage.com/data/cachedTrades.blank.json')
+  // const res = {"Trades":[{}]}
+  //if (!res.ok) {
+    // throw new Error('Failed to fetch data')
+  console.log('temp fix')
+  return {"Trades":[{}]}
 }
 
 export default async function Home() {
-  const cachedTrades = await getCachedTrades()
+  // const cachedTrades = await getCachedTrades()
 
   const query = `{ arkiver2 { Trades ( filter: { _operators: {timestamp:{gte: 1706745600 }}, chainId: 9001} sort: TIMESTAMP_DESC limit: 1000 ) { _id timestamp user productId margin marginUsd leverage size sizeUsd feeUsd pnl pnlUsd  wasLiquidated duration}}}`
   const data = await gql(query)
